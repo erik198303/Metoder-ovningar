@@ -9,8 +9,10 @@ namespace Ovning2
         returnerar som en sträng. (Tex. Strängarna ”Hej på dig!” och ” Hur mår
         du?” blir ”Hej på dig! Hur mår du?”.
          */
+
         static void Main(string[] args)
         {
+            
             TwoStrings("Tjena", " hur mår du?");
            
         }
