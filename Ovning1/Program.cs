@@ -14,7 +14,7 @@ namespace Ovning1
         }
         static void Hello(string input)
         {
-            System.Console.WriteLine(input);
+            System.Console.WriteLine("Halloj! " + input);
         }
     }
 }
