@@ -9,13 +9,13 @@ namespace Ovning3
          */
         static void Main(string[] args)
         {
-           Add(5,5);
-          
-
+           System.Console.WriteLine("Summan från metod: " + Add(5,5));
+           
         }
         static int Add(int num1, int num2)
         {
-            
+            int sum = num1 + num2;
+            return sum;
         }
     }
 }
