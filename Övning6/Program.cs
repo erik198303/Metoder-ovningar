@@ -16,7 +16,7 @@ namespace Övning6
             System.Console.WriteLine(ToPercentage(input));
             }
             catch{
-                System.Console.WriteLine("Du måste skriva in ett tal");
+                System.Console.WriteLine("Du måste skriva in ett tal!");
             }
 
             
