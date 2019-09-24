@@ -12,10 +12,10 @@ namespace Övning4
         {
             System.Console.Write("Hur mycket kostnar produkten(i SEK): ");
             double productVal = Convert.ToDouble(Console.ReadLine());
-            double productValueWithTax = Tax(productVal);
-            System.Console.WriteLine("Kostnaden för produkt ink. 25% moms är: {0}", productValueWithTax);
-            productValueWithTax = Math.Round(productValueWithTax,2);
-            System.Console.WriteLine("Avrundad decimal = {0}",productValueWithTax);
+            double productValueWithOutTax = Tax(productVal);
+            System.Console.WriteLine("Kostnaden för produkt ink. 25% moms är: {0}", productValueWithOutTax);
+            productValueWithOutTax = Math.Round(productValueWithOutTax,2);
+            System.Console.WriteLine("Avrundad decimal = {0}",productValueWithOutTax);
         }
         static double Tax (double tax)
         {
