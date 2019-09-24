@@ -6,19 +6,29 @@ namespace Övning7
     {
         static void Main(string[] args)
         {
-            bool ifMyndig = Myndig(17);
-            System.Console.WriteLine("Du är myndig = {0}", ifMyndig);
+            System.Console.Write("Hur gammal är du: ");
+            int answer = Convert.ToInt32(Console.ReadLine());
+
+            bool ifMyndig = Myndig(answer);
+            if(ifMyndig == true)
+            {   
+                System.Console.WriteLine("Grattis, du är myndig! Köp brews!");
+            }
+            else
+            {
+                System.Console.WriteLine("Tyvärr, du är inte tillräckligt gammal för brews!");
+            }
         }
       static bool Myndig(int age)
      {
             if (age >= 18)
          {
             return true;
-            //System.Console.WriteLine("Grattis! Spring och köpa brews!");
+            
          }
           else
          {   return false;
-            //System.Console.WriteLine("Tyvärr, då får dricka Fanta!");
+            
          }
      }
 
