@@ -10,14 +10,14 @@ namespace Övning5
          */
         static void Main(string[] args)
         {
-           System.Console.Write("Vad kostar produkt: ");
+           System.Console.Write("Vad kostar produkt(SEK): ");
            double value = Convert.ToDouble(Console.ReadLine());
            System.Console.Write("Ange moms, 0,01->0,99(1%-99%): ");
            double tax = Convert.ToDouble(Console.ReadLine());
            double totalTax = TaxCalcu(value,tax);
-           System.Console.WriteLine("Moms: {0}",totalTax);
+           System.Console.WriteLine("Moms(SEK): {0}",totalTax);
            double toltalPriceWithTax = value + totalTax;
-           System.Console.WriteLine("Totalpris ink. moms: {0}", toltalPriceWithTax);
+           System.Console.WriteLine("Totalpris ink. moms(SEK): {0}", toltalPriceWithTax);
 
             
         }
